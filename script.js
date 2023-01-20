@@ -75,3 +75,30 @@
             }
         }
         console.log(sum);
+
+        
+        // Урок 16
+        const sapsanStudent = {
+            name: "Saule",
+            surname: "Nazarbayeva",
+
+        }
+
+        sapsanStudent.name = "Akmaral";
+       
+        delete sapsanStudent.name;
+        
+        sapsanStudent.age = "24";
+        console.log(sapsanStudent);
+
+
+
+        function isEmpty(obj) {
+            if (JSON.stringify(obj) == '{}') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+      
+        isEmpty(sapsanStudent);
